@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section><h2>Working With Basic File Systems And Storage</h2></section>
+					<section>
+						<h2>Working With Basic File Systems And Storage</h2>
+						RHCSA Objectives:<ul>
+							<li> View, list, create, & delete data partitions on MBR & GPT disks</li>
+							<li> Create, mount, and unmount various file systems</li>
+							<li> Configure rhel to mount file systems at boot</li>
+							<li> Safely add partitions, logical volumes, and swap volumes to a system</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section><h4>File Systems</h4>
+					<p>For modern operating systems to use hard drives, they must be formatted with partitions and a file system.</p>
+					</section>
+					<section>
+						Unlike some OSes, Linux typically uses multiple partitions. Some reasons for this on Linux:<ul>
+      				<li> Securing Data (separating /home/ from / & /etc)</li>
+      				<li> Perfomance (use drives in parallel)</li>
+      				<li> Back-Ups (isolate relevant parts of the OS to back up)</li>
+      				<li> Fail-safe (one partition filling won't necessarily make other partitions unreachable)</li>
+						<ul>
+					</section>
+				</section>
+				<section>
+					<section>
+					<h5>Some Filesystem Commands</h5>
+					<li> <strong>blkid</strong> = Description of filesystems that are mounted</li>
+					<li> <strong>lsof</strong> = List open files and processes in a directory</li>
+					<li> <strong>lsblk</strong> = List info about block devices (drives) accessible by the system</li>
+					<li> df = Displays info about filesystems on the system</li>
+					<li> tune2fs = show & manage file system properties</li>
+				</section>
+					<section>
+						Slide 1a
+					</section>
+				</section>
+				<section>
+					Slide 1
+					<section>
+						Slide 1a
+					</section>
+				</section>
+				<section>
+					Slide 2
+					<section>Slide 2a</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
